@@ -37,11 +37,11 @@ During training:
 
 The trained policy achieved:
 
-- Average test reward: **500.0**
-- Standard deviation: **0.0**
-- Maximum reward achieved in all 20 evaluation episodes
+- Average test reward: **494.6**
+- Standard deviation: **23.54**
+- Maximum reward achieved in 19 of 20 evaluation episodes; one episode returned 392
 
-The result indicates that the learned policy was able to consistently balance the pole for the full episode during evaluation.
+The saved evaluation reached the 500-step limit in 19 of 20 episodes. These figures match the reward list stored in the notebook; they are not a fresh evaluation.
 
 ## Technologies
 
