@@ -60,3 +60,27 @@ The result indicates that the learned policy was able to consistently balance th
 - Discounted Returns
 - Stochastic Policy
 - Policy Evaluation
+
+
+## Run locally
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab reinforce_cartpole.ipynb
+```
+
+On Windows, activate with `.venv\Scripts\activate`. Run notebook cells in order; training precedes evaluation. Dependencies are unpinned, so package versions may affect reproducibility.
+
+## Saved experiment previews
+
+These figures are extracted from the notebook’s existing outputs, not a new training run.
+
+![Saved experiment figure 1](assets/result-1.png)
+
+![Saved experiment figure 2](assets/result-2.png)
+
+## Reproducibility limits
+
+Results describe the saved experiment rather than a guarantee for new runs. Training was not repeated during this documentation update. The notebook seeds NumPy and PyTorch but does not explicitly seed environment resets. Evaluation uses greedy actions across 20 episodes.
